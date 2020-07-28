@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <link rel="shortcut icon" type="image/png" href="<%=require('../images/favicon.png').default%>" />
+    <title>statistics</title>
+</head>
+
+<body>
+    <header class="header__menu">
+        <a class="header__logo header__black-theme" href="../index.html">NewsExplorer</a>
+        <nav class="header__nav">
+            <ul class="header__navlist">
+                <li class="header__navelement"><a href="../index.html" class="header__link header__black-theme" target="_blank">Главная</a></li>
+                <li class="header__navelement"><a href="../about/about.html" class="header__link header__black-theme" target="_blank">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="info">
+
+    </section>
+    <section class="statistic">
+        <a href="../index.html" class="statistic__subtitle statistic__subtitle_type-bold">Главная</a>
+        <span class="statistic__subtitle">/Аналитика</span>
+        <h2 class="statistic__title">Вы спросили: &laquo;Путешествия&raquo;</h2>
+        <p class="statistic__text">Новостей за неделю:<span> 3422332</span></p>
+        <p class="statistic__text">Упоминаний в Заголовках:<span> 666</span></p>
+    </section>
+    <section class="analitics">
+        <h3 class="analitics__title">Аналитика по дням</h3>
+        <div class="analitics__index"><span class="analitics__date">Дата </span><span>количество упоминаний</span></div>
+        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+        <div class="analitics__element"> <span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
+
+    </section>
+
+    <footer class="footer">
+        <article class="footer__copyright">&copy;Alex Roschektaev</article>
+        <ul class="footer__nav">
+            <li><a href="../index.html" class="footer__link" target="_blank">Главная</a></li>
+            <li><a href="../about/about.html" class="footer__link" target="_blank">О проекте</a></li>
+            <li><a class="footer__link" target="_blank">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__social">
+            <a href="https://github.com/roschek" class="footer__social-link" target="_blank"><img src="<%=require('../images/git-ico.svg').default%>" alt="git-link" target="_blank"></a>
+            <a href="https://www.facebook.com/aroschek" class="footer__social-link" target="_blank"><img src="<%=require('../images/fb-ico.svg').default%>" alt="facebook-link" target="_blank"></a>
+        </div>
+    </footer>
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>

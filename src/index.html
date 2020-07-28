@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <link rel="shortcut icon" type="image/ico" href="<%=require('./images/favicon.png').default%>" />
+    <title>project Portfolio</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <section class="header__menu">
+                <a class="header__logo" href="#">NewsExplorer</a>
+                <nav class="header__nav">
+                    <ul class="header__navlist">
+                        <li class="header__navelement"><a href="#" class="header__link header__link_is-active">Главная</a></li>
+                        <li class="header__navelement"><a href="./about.html" class="header__link" target="_blank">О проекте</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="header__search"></section>
+            <h1 class="header__title">Что в мире творится?</h1>
+            <p class="header__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+            <form action="" class="form-news">
+                <input type="text" name="" id="" class="form-news__input" placeholder="Введите тему новости">
+                <button type="submit" value="" class="form-news__submit">Искать</button>
+            </form>
+        </header>
+
+        <main>
+            <!--секция предзагрузки-->
+            <section class="preload">
+                <div class="preload__loader"></div>
+                <p class="preload__text">Идет загрузка новостей</p>
+            </section>
+
+            <!--блок ошибки загрузки-->
+            <section class="error">
+                <img src="<%=require('./images/not-found_v1.svg').default%>" class="error__img" alt="error-image">
+                <h3 class="error__title">Ничего не найдено</h3>
+                <p class="error__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+            </section>
+
+            <!--блок с карточками-->
+            <section class="search-result">
+                <div class="search__container">
+                    <h2 class="searh-result__title">Результаты поиска</h2>
+                    <a href="./statistics.html" class="search-result__link" target="_blank">посмотреть аналитику &#8250;</a>
+                </div>
+                <div class="search-result__cards">
+                    <a href="#" class="search-result__card">
+            <img src="<%=require('./images/image_08.jpg').default%>" alt="news-image" class="search-result__image">
+            <span class="search-result__date">Date</span>
+            <h3 class="search-result__card-title">Национальное достояние – парки</h3>
+            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
+              к природе.</p>
+            <span class="search-result__author">meduza</span>
+          </a>
+
+                    <a href="#" class="search-result__card">
+            <img src="<%=require('./images/image_04.jpg').default%>" alt="news-image" class="search-result__image">
+            <span class="search-result__date">Date</span>
+            <h3 class="search-result__card-title">Национальное достояние – парки</h3>
+            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
+              к природе.</p>
+            <span class="search-result__author">meduza</span>
+          </a>
+
+                    <a href="#" class="search-result__card">
+            <img src="<%=require('./images/image_07.jpg').default%>" alt="news-image" class="search-result__image">
+            <span class="search-result__date">Date</span>
+            <h3 class="search-result__card-title">Национальное достояние – парки</h3>
+            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
+              к природе.</p>
+            <span class="search-result__author">meduza</span>
+          </a>
+                </div>
+                <button class="search-result__button">Показать еще</button>
+            </section>
+
+            <!--секция 'обо мне'-->
+            <section class="main__about">
+                <img src="<%=require('./images/avatar.jpg').default%>" alt="photo" class="main__photo">
+                <div class="main__textarea">
+                    <h2 class="main__title">Об авторе</h2>
+                    <p class="main__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+                    </p>
+                    <p class="main__text"> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p class="footer__copyright">&copy;Alex Roschektaev</p>
+            <ul class="footer__nav">
+                <li class="footer__list-item"><a class="footer__link" target="_blank">Главная</a></li>
+                <li class="footer__list-item"><a href="./about.html" class="footer__link" target="_blank">О проекте</a></li>
+                <li class="footer__list-item"><a href="https://praktikum.yandex.ru/" class="footer__link" target="_blank">Яндекс.Практикум</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="https://github.com/roschek" class="footer__social-link" target="_blank"><img src="<%=require('./images/git-ico.svg').default%>" alt="git-link"></a>
+                <a href="https://www.facebook.com/aroschek/" class="footer__social-link" target="_blank"><img src="<%=require('./images/fb-ico.svg').default%>" alt="facebook-link"></a>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>

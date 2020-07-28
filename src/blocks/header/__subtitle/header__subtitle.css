@@ -1,0 +1,38 @@
+.header__subtitle {
+    font-family: Roboto;
+    display: block;
+    color: white;
+    max-width: 545px;
+    margin: 0 auto;
+    margin-left: 30%;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: start;
+}
+
+@media screen and (max-width:900px) {
+    .header__subtitle {
+        max-width: 452px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header__subtitle {
+        max-width: 452px;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header__subtitle {
+        max-width: 288px;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .header__subtitle {
+        max-width: 288px;
+        margin-left: auto;
+    }
+}

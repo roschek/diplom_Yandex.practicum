@@ -1,0 +1,14 @@
+.analitics__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    margin-left: 104px;
+    padding-top: 80px;
+}
+
+@media screen and (max-width:720px) {
+    .analitics__title {
+        font-size: 22px;
+    }
+}

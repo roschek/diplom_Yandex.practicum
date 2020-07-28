@@ -1,0 +1,10 @@
+.preload__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #B6BCBF;
+  max-width: 230px;
+  display: block;
+  margin: 0 auto;
+}

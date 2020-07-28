@@ -1,0 +1,13 @@
+    @import url('./__title/slider-card__title.css');
+    .swiper-container {
+        margin: 0 auto;
+        width: 1440px;
+        overflow: hidden;
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 1440px;
+        overflow: hidden;
+    }

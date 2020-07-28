@@ -1,0 +1,38 @@
+.form-news__submit {
+    font-family: Roboto;
+    border: none;
+    border-radius: 100px;
+    padding: 24px;
+    position: absolute;
+    top: 0;
+    right: 33px;
+    cursor: pointer;
+    background: #2F71E5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    color: white;
+    transition: .3s;
+    width: 168px;
+    outline: none;
+}
+
+.form-news__submit:hover {
+    background: #347EFF;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+}
+
+@media screen and (max-width:1000px) {
+    .form-news__submit {
+        width: 160px;
+        padding: 19px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .form-news__submit {
+        width: 100%;
+        padding: 15px 113px 17px 114px;
+        position: relative;
+        margin-top: 16px;
+    }
+}

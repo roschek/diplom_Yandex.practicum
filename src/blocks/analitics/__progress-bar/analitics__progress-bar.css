@@ -1,0 +1,7 @@
+.analitics__progress-bar{
+  display: inline-block;
+  width:50%;
+  background-color: #2F71E5;
+  color: white;
+  padding-left: 20px;
+}

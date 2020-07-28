@@ -1,0 +1,18 @@
+.statistic__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+@media screen and (max-width:1000px) {
+    .technologies__items {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .technologies__items {
+        font-size: 30px;
+    }
+}

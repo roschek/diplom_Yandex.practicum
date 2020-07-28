@@ -1,0 +1,10 @@
+.error__title {
+  display: block;
+  max-width: 356px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  margin:0 auto;
+  text-align: center;
+}

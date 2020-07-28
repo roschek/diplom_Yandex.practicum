@@ -1,0 +1,33 @@
+ .search-result__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  color:black;
+  max-width: 250px;
+  margin-right: 6%;
+  padding-top: 95px;
+  transition: .2s;
+ }
+
+ .search-result__link:hover{
+   color:grey;
+ }
+
+ @media screen and (max-width:900px){
+   .search-result__link{
+     padding-top: 48px;
+     max-width: 210px;
+     margin-right: 6%;
+   }
+ }
+  
+ @media screen and (max-width:500px){
+  .search-result__link{
+        padding-top: 48px;
+    max-width: 197px;
+    margin-right: 6%;
+  }
+}

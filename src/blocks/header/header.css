@@ -10,7 +10,7 @@
 @import url('./__logo/header__black-theme.css');
 @import url('./__link/_active/header__link_is-active.css');
 .header {
-    background-image: url('../../images/header__main.jpg');
+    background-image: url('../../../images/header__main.jpg');
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;

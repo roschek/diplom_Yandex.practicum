@@ -1,8 +1,0 @@
-@import url('./__subtitle/statistic__subtitle.css');
-@import url('./__title/statistic__title.css');
-@import url('./__text/statistic__text.css');
-
-.statistic{
-  margin-left: 104px;
-  margin-top: 40px;
-}

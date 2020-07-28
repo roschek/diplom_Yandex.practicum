@@ -4,7 +4,7 @@
 Для запуска проекта:
 Клонируйте репозиторий:
 
-$ git clone https://github.com/roschek/diplom_Yandex.practicum/
+$ git clone https://github.com/roschek/diplom_Yandex.practicum.git
 Установите зависимости:
 
 $ npm i

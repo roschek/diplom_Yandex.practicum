@@ -1,0 +1,9 @@
+@import url('./__loader/preload__loader.css');
+@import url('./__text/preload__text.css');
+
+.preload{
+  width:100%;
+  background-color: #F5F6F7;
+  padding:80px;
+  display: none;
+}

@@ -1,0 +1,43 @@
+@import url('./__input/form-news__input.css');
+@import url('./__submit/form-news__submit.css');
+@import url('./__label/form-news__label.css');
+.form-news {
+    position: relative;
+    margin: 64px auto 0 30%;
+    padding-bottom: 80px;
+    max-width: 634px;
+}
+
+@media screen and (max-width:1000px) {
+    .form-news {
+        margin: 24px auto 0 30%;
+        padding-bottom: 48px;
+        max-width: 448px;
+        position: relative;
+        transition: .2s;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .form-news {
+        margin: 24px auto 0 10%;
+        padding-bottom: 48px;
+        max-width: 388px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .form-news {
+        margin: 24px auto 0 20%;
+        padding-bottom: 48px;
+        max-width: 288px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .form-news {
+        margin: 24px auto 0 auto;
+        padding-bottom: 48px;
+        max-width: 288px;
+    }
+}

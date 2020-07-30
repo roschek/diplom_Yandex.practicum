@@ -1,0 +1,26 @@
+@import url('./__title/technologies__title.css');
+@import url('./__name/technologies__name.css');
+@import url('./__items/technologies__items.css');
+@import url('./__icon/technologies__icon.css');
+.technologies {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F5F6F7;
+    padding: 80px 230px 100px 10%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1100px) {
+    .technologies {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .technologies {
+        padding: 32px 16px;
+        margin-bottom: -42px;
+    }
+}

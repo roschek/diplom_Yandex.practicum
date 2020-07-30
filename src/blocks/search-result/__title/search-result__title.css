@@ -1,0 +1,33 @@
+.searh-result__title {
+  margin-left: 7%;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  display: inline-block;
+  max-width: 400px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  }
+
+  .search__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width:900px){
+    .searh-result__title{
+      font-size: 30px;
+      max-width: 336px;
+      margin-top: 40px;
+      margin-bottom: 32px;
+    }
+  }
+  @media screen and (max-width:500px){
+    .searh-result__title{
+      display: block;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+  }

@@ -8,6 +8,17 @@
     max-width: 634px;
 }
 
+.form-error {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    padding: 5px;
+    transition: .3s;
+    font-size: 16px;
+    color: red;
+    display: block;
+}
+
 @media screen and (max-width:1000px) {
     .form-news {
         margin: 24px auto 0 30%;

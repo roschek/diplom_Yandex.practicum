@@ -1,15 +1,26 @@
 .slider__card {
-    display: grid;
-    grid-template-areas: "slider-card__date slider-card__date" "slider-card__image slider-card__title" "slider-card__image slider-card__email" "slider-card__description slider-card__description";
-    grid-template-columns: 64px 1fr;
-    grid-template-rows: 32px 32px 32px 1fr;
-    grid-column-gap: 16px;
-    width: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: black;
+    width: 400px;
+    max-height: 288px;
+    box-shadow: 0 0 2px;
     background: #fff;
     border-radius: 16px;
-    padding: 24px;
     cursor: pointer;
     overflow: hidden;
+}
+
+.slider__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    align-items: flex-start;
 }
 
 .slider__card:hover {
@@ -19,9 +30,7 @@
 @media (max-width: 1439px) {
     .slider__card {
         width: 336px;
-        grid-template-columns: 48px 1fr;
-        grid-template-rows: 24px 24px 24px 1fr;
-        grid-column-gap: 12px;
+        height: 242px;
     }
 }
 
@@ -29,10 +38,6 @@
     .slider__card {
         width: 288px;
         padding: 16px;
-        grid-template-columns: 48px 1fr;
-        grid-template-rows: 24px 24px 24px 1fr;
-        grid-column-gap: 12px;
-        overflow: hidden;
     }
 }
 
@@ -43,9 +48,9 @@
 }
 
 .slider-card__image {
-    grid-area: slider-card__image;
     width: 64px;
     height: 64px;
+    margin-right: 16px;
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
@@ -59,15 +64,52 @@
 }
 
 .slider-card__email {
-    grid-area: slider-card__email;
-    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: start;
+    align-self: start;
+    color: black;
 }
 
 .slider-card__description {
-    grid-area: slider-card__description;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    text-align: start;
 }
 
 .slider-card__date {
-    grid-area: slider-card__date;
-    margin: 0;
+    color: #B6BCBF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 0;
+    text-align: start;
+    padding-bottom: 16px;
+}
+
+.slider-card__title {
+    text-align: start;
+    color: black;
+    margin-bottom: 10px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.swiper-button-prev {
+    left: -180px;
+}
+
+.slider__main {
+    display: flex;
+    flex-direction: row;
 }

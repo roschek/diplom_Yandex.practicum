@@ -1,24 +1,24 @@
-export class Api {
-    constructor(key, prvDate, endDate) {
-        this._key = key,
-            this._prvDate = prvDate,
-            this._endDate = endDate
+export default class NewsApi {
+    constructor(key, from, to) {
+        this._key = key;
+        this._from = from;
+        this._to = to;
     }
 
-
-    _newsUrl(newsAsk) {
-        return `https://newsapi.org/v2/everything?q=${newsAsk}&from=${this._prvDate}&to=${this._endDate}&sortBy=publishedAt&pageSize=100&language=ru`;
+    _createUrl(keyWord) {
+        return `https://newsapi.org/v2/everything?q=${keyWord}&from=${this._from}&to=${this._to}&sortBy=publishedAt&pageSize=100&language=ru`;
     }
 
     getResponseJson(data) {
         if (data.ok) {
             return data.json();
+
         }
         Promise.reject(data.status);
     }
 
-    async getNews(newsAsk) {
-        const url = this._newsUrl(newsAsk);
+    async getNews(keyWord) {
+        const url = this._createUrl(keyWord);
         try {
             const result = await fetch(url, {
                 method: 'GET',

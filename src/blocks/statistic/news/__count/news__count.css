@@ -1,0 +1,13 @@
+.news__count {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #1A1B22;
+}
+
+.news__count:last-of-type {
+  margin-bottom: 0;
+}

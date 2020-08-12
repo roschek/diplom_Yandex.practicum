@@ -1,0 +1,33 @@
+.analytics-table__ruler {
+  display: none;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .analytics-table__ruler {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 117px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-left: 0;
+    width: auto;
+
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .analytics-table__ruler {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 104px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-left: 0;
+    width: auto;
+
+    list-style: none;
+  }
+}

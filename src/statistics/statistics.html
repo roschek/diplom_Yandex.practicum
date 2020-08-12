@@ -27,20 +27,37 @@
         <a href="../index.html" class="statistic__subtitle statistic__subtitle_type-bold">Главная</a>
         <span class="statistic__subtitle">/Аналитика</span>
         <h2 class="statistic__title">Вы спросили: &laquo;Путешествия&raquo;</h2>
-        <p class="statistic__text">Новостей за неделю:<span> 3422332</span></p>
-        <p class="statistic__text">Упоминаний в Заголовках:<span> 666</span></p>
+        <p class="statistic__text news-for-week">Новостей за неделю:<span> 3422332</span></p>
+        <p class="statistic__text pos-in-headers">Упоминаний в Заголовках:<span> 666</span></p>
     </section>
-    <section class="analitics">
-        <h3 class="analitics__title">Аналитика по дням</h3>
-        <div class="analitics__index"><span class="analitics__date">Дата </span><span>количество упоминаний</span></div>
-        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-        <div class="analitics__element"> <span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-        <div class="analitics__element"><span class="analitics__date">Дата </span><span class="analitics__progress-bar">заливка</span></div>
-
+    <section class="analytics-table">
+        <div class="analytics-table__container">
+            <h2 class="analytics-table__title">Аналитика по дням</h2>
+            <div class="analytics-table__header">
+                <span class="analytics-table__subtitle analytics-table__month">Дата<span class="abalytics-table__br">(август)</span></span>
+                <span class="analytics-table__subtitle analytics-table__count">Кол-во упоминаний</span>
+            </div>
+            <ul class="analytics-table__ruler">
+                <li class="analytics-table__ruler-item">0</li>
+                <li class="analytics-table__ruler-item">25</li>
+                <li class="analytics-table__ruler-item">50</li>
+                <li class="analytics-table__ruler-item">75</li>
+                <li class="analytics-table__ruler-item">100</li>
+            </ul>
+            <div class="analytics-table__flex-container">
+                <ul class="analytics-table__items-list analytics-table__items-list_position_reverse" id="js-week-ul">
+                </ul>
+                <ul class="analytics-table__items-list" id="js-table-data">
+                </ul>
+            </div>
+            <ul class="analytics-table__ruler">
+                <li class="analytics-table__ruler-item">0</li>
+                <li class="analytics-table__ruler-item">25</li>
+                <li class="analytics-table__ruler-item">50</li>
+                <li class="analytics-table__ruler-item">75</li>
+                <li class="analytics-table__ruler-item">100</li>
+            </ul>
+        </div>
     </section>
 
     <footer class="footer">
@@ -55,6 +72,25 @@
             <a href="https://www.facebook.com/aroschek" class="footer__social-link" target="_blank"><img src="<%=require('../images/fb-ico.svg').default%>" alt="facebook-link" ></a>
         </div>
     </footer>
+    <template id='js-week-days'>
+        <li class="analytics-table__day">19, пн</li>
+        <li class="analytics-table__day">20, вт</li>
+        <li class="analytics-table__day">21, ср</li>
+        <li class="analytics-table__day">22, чт</li>
+        <li class="analytics-table__day">23, пт</li>
+        <li class="analytics-table__day">24, сб</li>
+        <li class="analytics-table__day">25, вс</li>
+      </template>
+    <template id='js-news-count'>
+        <li class="analytics-table__cell analytics-table__cell_day_mon">0</li>
+        <li class="analytics-table__cell analytics-table__cell_day_tue">0</li>
+        <li class="analytics-table__cell analytics-table__cell_day_wed">0</li>
+        <li class="analytics-table__cell analytics-table__cell_day_thu">0</li>
+        <li class="analytics-table__cell analytics-table__cell_day_fri">0</li>
+        <li class="analytics-table__cell analytics-table__cell_day_sat">0</li>
+        <li class="analytics-table__cell analytics-table__cell_day_sun">0</li>
+      </template>
+
     <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 

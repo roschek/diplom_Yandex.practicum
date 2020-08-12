@@ -1,0 +1,33 @@
+@import url('./__container/analytics-table__container.css');
+@import url('./__title/analytics-table__title.css');
+@import url('./__header/analytics-table__header.css');
+@import url('./__subtitle/analytics-table__subtitle.css');
+@import url('./__month/analytics-table__month.css');
+@import url('./__count/analytics-table__count.css');
+@import url('./__items-list/analytics-table__items-list.css');
+@import url('./__day/analytics-table__day.css');
+@import url('./__cell/analytics-table__cell.css');
+@import url('./__flex-contanier/analytics-table__flex-contanier.css');
+@import url('./__br/abalytics-table__br.css');
+@import url('./__ruler/analytics-table__ruler.css');
+@import url('./__ruler-item/analytics-table__ruler-item.css');
+
+.analytics-table {
+  padding-top: 24px;
+  padding-bottom: 38px;
+  background-color: #F5F6F7;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .analytics-table {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .analytics-table {
+    padding-top: 80px;
+    padding-bottom: 72px;
+  }
+}

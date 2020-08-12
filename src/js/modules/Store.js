@@ -1,5 +1,6 @@
-export class Store {
+import { ERROR_MESSAGES } from '../constants/ERROR_MESSAGES';
 
+export default class Store {
     constructor() {
         this.getSavedNews = this.getSavedNews.bind(this);
     }

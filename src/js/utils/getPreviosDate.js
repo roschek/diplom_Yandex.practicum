@@ -1,4 +1,4 @@
-export const getPreviousDate = (dayAgo, isStandart) => {
+export const getPreviosDate = (dayAgo, isStandart) => {
     const data = new Date();
     const from = data.setDate(data.getDate() - dayAgo);
     if (isStandart) {

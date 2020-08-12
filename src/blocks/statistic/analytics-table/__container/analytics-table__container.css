@@ -1,0 +1,17 @@
+.analytics-table__container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .analytics-table__container {
+    width: 89.6%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .analytics-table__container {
+    width: 85.5%;
+  }
+}

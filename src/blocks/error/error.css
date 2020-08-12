@@ -1,10 +1,13 @@
 @import url('./__img/error__img.css');
 @import url('./__title/error__title.css');
 @import url('./__subtitle/error__subtitle.css');
+.error {
+    width: 100%;
+    background-color: #F5F6F7;
+    padding: 80px;
+    display: none;
+}
 
-.error{
-  width:100%;
-  background-color: #F5F6F7;
-  padding:80px;
-  display: none;
+.error__active {
+    display: block;
 }

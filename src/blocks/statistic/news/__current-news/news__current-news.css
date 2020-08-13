@@ -1,0 +1,11 @@
+.news__current-news {
+  display: block;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 544px) {
+  .news__current-news {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+}

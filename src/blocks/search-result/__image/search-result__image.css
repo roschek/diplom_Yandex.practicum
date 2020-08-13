@@ -1,14 +1,13 @@
-.search-result__image{
-   object-fit: contain;
-  object-position: center;
-  margin: auto;
-  border-radius: 16px 16px 0 0;
-  width: 100%;
+.search-result__image {
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+    border-radius: 16px 16px 0 0;
+    width: 100%;
 }
 
-@media screen and (max-width:900px){
-  .search-result__image{
-   
-    width: 100%;
-  }
+@media screen and (max-width:900px) {
+    .search-result__image {
+        width: 100%;
+    }
 }

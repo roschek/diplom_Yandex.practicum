@@ -1,0 +1,12 @@
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__container {
+    width: 280px;
+  }
+}

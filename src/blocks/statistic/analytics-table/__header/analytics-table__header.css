@@ -1,0 +1,21 @@
+.analytics-table__header {
+  display: flex;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #1A1B22;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .analytics-table__header {
+    margin-bottom: 16px;
+    padding-bottom: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .analytics-table__header {
+    margin-bottom: 16px;
+    padding-bottom: 15px;
+  }
+}
+

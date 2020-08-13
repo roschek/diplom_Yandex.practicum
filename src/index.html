@@ -24,9 +24,10 @@
             <section class="header__search"></section>
             <h1 class="header__title">Что в мире творится?</h1>
             <p class="header__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-            <form action="get" class="form-news">
+            <form class="form-news" id="news" name="news" novalidate>
                 <input type="text" name="news" id="news" class="form-news__input" placeholder="Введите тему новости" required>
-                <button type="submit" value="" class="form-news__submit">Искать</button>
+                <span id="news-error" class="form-error">придется что-то ввести</span>
+                <button type="submit" class="form-news__submit submit" id="submit" name="submit">Искать</button>
             </form>
         </header>
 
@@ -45,70 +46,49 @@
             </section>
 
             <!--блок с карточками-->
+            <section class="result">
+            </section>
             <section class="search-result">
                 <div class="search__container">
                     <h2 class="searh-result__title">Результаты поиска</h2>
                     <a href="./statistics.html" class="search-result__link" target="_blank">посмотреть аналитику &#8250;</a>
+
                 </div>
-                <div class="search-result__cards">
-                    <a href="#" class="search-result__card">
-            <img src="<%=require('./images/image_08.jpg').default%>" alt="news-image" class="search-result__image">
-            <span class="search-result__date">Date</span>
-            <h3 class="search-result__card-title">Национальное достояние – парки</h3>
-            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
-              к природе.</p>
-            <span class="search-result__author">meduza</span>
-          </a>
-
-                    <a href="#" class="search-result__card">
-            <img src="<%=require('./images/image_04.jpg').default%>" alt="news-image" class="search-result__image">
-            <span class="search-result__date">Date</span>
-            <h3 class="search-result__card-title">Национальное достояние – парки</h3>
-            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
-              к природе.</p>
-            <span class="search-result__author">meduza</span>
-          </a>
-
-                    <a href="#" class="search-result__card">
-            <img src="<%=require('./images/image_07.jpg').default%>" alt="news-image" class="search-result__image">
-            <span class="search-result__date">Date</span>
-            <h3 class="search-result__card-title">Национальное достояние – парки</h3>
-            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться
-              к природе.</p>
-            <span class="search-result__author">meduza</span>
-          </a>
+                <div class="card__wrapper">
+                    <div class="search__result-cards ">
+                    </div>
                 </div>
-                <button class="search-result__button">Показать еще</button>
-            </section>
+                <button class="search-result__button" name="show-more-bttn">Показать еще</button>
 
-            <!--секция 'обо мне'-->
-            <section class="main__about">
-                <img src="<%=require('./images/avatar.jpg').default%>" alt="photo" class="main__photo">
-                <div class="main__textarea">
-                    <h2 class="main__title">Об авторе</h2>
-                    <p class="main__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
-                    </p>
-                    <p class="main__text"> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-                </div>
-            </section>
-        </main>
+    </div>
+
+    </section>
+
+    <!--секция 'обо мне'-->
+    <section class="main__about">
+        <img src="<%=require('./images/avatar.jpg').default%>" alt="photo" class="main__photo">
+        <div class="main__textarea">
+            <h2 class="main__title">Об авторе</h2>
+            <p class="main__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+            </p>
+            <p class="main__text"> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+    </section>
+    </main>
 
 
-        <footer class="footer">
-            <p class="footer__copyright">&copy;Alex Roschektaev</p>
-            <ul class="footer__nav">
-                <li class="footer__list-item"><a href="#" class="footer__link" target="_blank">Главная</a></li>
-                <li class="footer__list-item"><a href="./about.html" class="footer__link" target="_blank">О проекте</a></li>
-                <li class="footer__list-item"><a href="https://praktikum.yandex.ru/" class="footer__link" target="_blank">Яндекс.Практикум</a></li>
-            </ul>
-            <div class="footer__social">
-                <a href="https://github.com/roschek" class="footer__social-link" target="_blank"><img src="<%=require('./images/git-ico.svg').default%>" alt="git-link"></a>
-                <a href="https://www.facebook.com/aroschek/" class="footer__social-link" target="_blank"><img src="<%=require('./images/fb-ico.svg').default%>" alt="facebook-link"></a>
-            </div>
-        </footer>
+    <footer class="footer">
+        <p class="footer__copyright">&copy;Alex Roschektaev</p>
+        <ul class="footer__nav">
+            <li class="footer__list-item"><a href="#" class="footer__link" target="_blank">Главная</a></li>
+            <li class="footer__list-item"><a href="./about.html" class="footer__link" target="_blank">О проекте</a></li>
+            <li class="footer__list-item"><a href="https://praktikum.yandex.ru/" class="footer__link" target="_blank">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__social">
+            <a href="https://github.com/roschek" class="footer__social-link" target="_blank"><img src="<%=require('./images/git-ico.svg').default%>" alt="git-link"></a>
+            <a href="https://www.facebook.com/aroschek/" class="footer__social-link" target="_blank"><img src="<%=require('./images/fb-ico.svg').default%>" alt="facebook-link"></a>
+        </div>
+    </footer>
     </div>
     <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>

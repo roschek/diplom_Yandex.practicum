@@ -2,9 +2,9 @@
 @import url('./__index/analitics__index.css');
 @import url('./__element/analitics__element.css');
 @import url('./__date/analitics__date.css');
+@import url('../card/card.css');
 @import url('./__progress-bar/analitics__progress-bar.css');
-
-.analitics{
-  width:100%;
-  background-color: #F5F6F7;
+.analitics {
+    width: 100%;
+    background-color: #F5F6F7;
 }

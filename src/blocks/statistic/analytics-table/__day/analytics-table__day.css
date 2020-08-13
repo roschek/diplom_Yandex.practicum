@@ -1,0 +1,19 @@
+.analytics-table__day {
+  height: 24px;
+  width: 64px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #1A1B22;
+  margin-bottom: 24px;
+}
+
+.analytics-table__day:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 544px) {
+  .analytics-table__day {
+    width: 104px;
+    margin-bottom: 56px;
+  }
+}

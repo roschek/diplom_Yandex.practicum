@@ -1,0 +1,22 @@
+.news__title {
+  margin: 0;
+  font-family: "Robotoslab", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+
+  color: #1A1B22;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .news__title {
+    display: inline-block;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .news__title {
+    display: inline-block;
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,36 @@
+@import url('./_day/analytics-table__cell_day_mon.css');
+@import url('./_day/analytics-table__cell_day_tue.css');
+@import url('./_day/analytics-table__cell_day_wed.css');
+@import url('./_day/analytics-table__cell_day_thu.css');
+@import url('./_day/analytics-table__cell_day_fri.css');
+@import url('./_day/analytics-table__cell_day_sat.css');
+@import url('./_day/analytics-table__cell_day_sun.css');
+
+
+.analytics-table__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  min-width: 24px;
+  height: 24px;
+  padding-left: 6px;
+  margin-bottom: 24px;
+  vertical-align: middle;
+  
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2F71E5;
+}
+
+.analytics-table__cell:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 544px) {
+  .analytics-table__cell {
+    margin-bottom: 56px;
+  }
+}

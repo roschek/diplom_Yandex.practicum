@@ -1,0 +1,4 @@
+.analytics-table__items-list .analytics-table__items-list_position_reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}

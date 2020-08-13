@@ -1,0 +1,18 @@
+.analytics-table__month {
+  width: 64px;
+  margin-right: 16px;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .analytics-table__month {
+    width: 104px;
+    margin-right: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .analytics-table__month {
+    width: 104px;
+    margin-right: 0;
+  }
+}

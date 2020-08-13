@@ -1,0 +1,17 @@
+.news__menu {
+ display: none;
+}
+
+@media (max-width: 1023px) and (min-width: 544px) {
+  .news__menu {
+    display: block;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .news__menu {
+    display: block;
+    margin-bottom: 80px;
+  }
+}

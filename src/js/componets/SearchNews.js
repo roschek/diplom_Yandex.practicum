@@ -14,6 +14,7 @@ export default class SearchInput {
 
     renderNewsCard() {
         event.preventDefault();
+
         const keyWord = this._getFormValue();
         if (keyWord) {
             this._toggleNotFoundblock(false);
@@ -26,6 +27,7 @@ export default class SearchInput {
     }
 
     async _saveApiData(keyWord) {
+
         try {
             const result = await this.newsApi.getNews(keyWord);
             if (result && result.totalResults !== 0) {

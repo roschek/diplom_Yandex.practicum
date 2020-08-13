@@ -16,6 +16,7 @@ export default class Store {
     }
 
     getSavedNews() {
+
         const savedNews = JSON.parse(localStorage.getItem('newsList'));
         if (savedNews !== null || savedNews !== undefined || savedNews !== '') {
             return savedNews;

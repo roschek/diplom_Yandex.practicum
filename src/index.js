@@ -21,7 +21,7 @@ const newsCard = new NewsCard();
 const formValid = new FormValid(form);
 
 
-const newsCardList = new NewsCardList(document.querySelector('.search__result-cards'), store, newsCard);
+const newsCardList = new NewsCardList(document.querySelector('.search__result-cards'), document.querySelector('.card__wrapper'), document.querySelector('.search-result__button'), store, newsCard);
 const searchNews = new SearchNews(form, newsCardList, formValid, newsApi, store);
 
 searchNews.addEventListener('submit', searchNews.renderNewsCard);
